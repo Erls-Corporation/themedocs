@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  jQuery().piroBox({
+  $().piroBox({
     my_speed: 300,
     //animation speed
     bg_alpha: 0.5,
@@ -10,7 +10,12 @@ $(document).ready(function() {
     //slideshow 
     close_all: '.piro_close' // add class .piro_overlay(with comma)if you want overlay click close piroBox
   });
-  jQuery('a[href*=#]').infinite_scroll();
+  $('a[href*=#]').infinite_scroll();
+
+  $('body > .topbar').scrollSpy();
+
+  $('#topbar').dropdown();
+
 });
 
 
